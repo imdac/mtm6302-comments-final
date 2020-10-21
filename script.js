@@ -1,9 +1,6 @@
 const $form = document.getElementById('form')
 const $output = document.getElementById('output')
 
-const $form = document.getElementById('form')
-const $output = document.getElementById('output')
-
 $form.addEventListener('submit', function (e) {
   e.preventDefault()
 
