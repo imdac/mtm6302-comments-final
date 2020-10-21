@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+  <main class="container">
+    <form id="form" class="py-5">
+      <h3>Customer Comments</h3>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="form-control" value="Tom">
+      </div>
+      <div class="form-group">
+        <label>Are you a current customer?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="customer" id="customer1" value="yes" checked>
+          <label class="form-check-label" for="customer1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="customer" id="customer2" value="No">
+          <label class="form-check-label" for="customer2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Which products do you use?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="products" id="productA" value="productA" checked>
+          <label class="form-check-label" for="productA">
+            Product A
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="products" id="productB" value="productB">
+          <label class="form-check-label" for="productB">
+            Product B
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="products" id="productC" value="productC">
+          <label class="form-check-label" for="productC">
+            Product C
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <select name="rating" class="form-control">
+          <option></option>
+          <option>Very Bad</option>
+          <option>Bad</option>
+          <option selected>Okay</option>
+          <option>Good</option>
+          <option>Very Good</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea name="comment" class="form-control">It was okay.</textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    <div class="border bg-light p-3 my-3">
+      <h4>Output</h4>
+      <samp id="output" class="py-3 text-danger"></samp>
+    </div>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
